@@ -4,7 +4,7 @@ export function exportRows(state,chartPollutant='CO2'){
  const totals=['CO2','CO','NOx','PM'].map(p=>({p,c:calculate({...state,pollutant:p})}));
  const daily=Object.fromEntries(totals.map(({p})=>[p,calculateDaily({...state,pollutant:p})]));
  return [
- ['Mysuru traffic comparison — simplified copy'],['Scope','Applied inputs only. Travel emissions and idling fuel consumption are separate results.'],
+ ['Mysuru Dasara: Traffic and Emissions'],['Scope','Applied inputs only. Travel emissions and idling fuel consumption are separate results.'],
  ['Comparison period (d)',state.profileDays],['Round-trip distance (km)',distance],['Normal idling time (min)',state.regularWait],['Dasara idling time (min)',state.dasaraWait],
  ['Dasara vehicle increase (%)',state.dasaraIncrease??state.countBasis?.dasaraIncrease??40],['Normal fleet participation (%)',state.manualCounts?'Manual round-trip counts':state.normalPercent??state.countBasis?.normalPercent??15],
  ['Count basis',state.manualCounts?'Manually entered normal round trips; Dasara applies the selected increase':'Registered fleet multiplied by assumed participation; Dasara applies the selected increase'],

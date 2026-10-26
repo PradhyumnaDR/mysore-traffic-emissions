@@ -1,4 +1,4 @@
-# Mysuru traffic emissions calculator
+# Mysuru Dasara: Traffic and Emissions
 
 An interactive dashboard comparing normal and Dasara sightseeing traffic in Mysuru, India. Built with HTML, CSS and JavaScript; no dependency installation or build is needed.
 
@@ -91,3 +91,7 @@ node check-interactions.mjs
 ```
 
 These interaction checks do not replace testing the rendered site in a browser.
+
+## Dashboard image
+
+The user-supplied Dasara procession photograph is bundled at `docs/assets/dasara-procession.jpg` and shown beside the introduction. The full image is preserved. The displayed tagline is **Festivals, Traffic & Emissions**.
